@@ -1,0 +1,4 @@
+{
+  "test_bp.py::TestWebViewAndroid::()::test_cart_page_opened": true,
+  "test_bp.py::test_cart_page_opened": true
+}
