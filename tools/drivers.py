@@ -44,3 +44,43 @@ class Drivers:
 
         request.addfinalizer(fin)
         return driver  # provide the fixture value
+
+    @pytest.fixture(scope="function")
+    def xiaomi_c_driver(self, request):
+        desired_caps = {
+            'automationName': 'Appium',
+            'appActivity': 'ru.leroymerlin.mobile.presentation.MainActivity',
+            'platformName': 'Android',
+            'platformVersion': '7.0',
+            'deviceName': 'f327c0d3',
+            # 'deviceName': 'emulator-5554',  # Emulator
+            'appPackage': 'ru.leroymerlin.mobile',
+            'noReset': 'true'
+        }
+        driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+
+        def fin():
+            driver.quit()
+
+        request.addfinalizer(fin)
+        return driver  # provide the fixture value
+
+    @pytest.fixture(scope="function")
+    def xiaomi_driver(self, request):
+        desired_caps = {
+            'automationName': 'Appium',
+            'appActivity': 'ru.leroymerlin.mobile.presentation.MainActivity',
+            'platformName': 'Android',
+            'platformVersion': '7.0',
+            'deviceName': 'f327c0d3',
+            # 'deviceName': 'emulator-5554',  # Emulator
+            'appPackage': 'ru.leroymerlin.mobile',
+            # 'noReset': 'true'
+        }
+        driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+
+        def fin():
+            driver.quit()
+
+        request.addfinalizer(fin)
+        return driver  # provide the fixture value
