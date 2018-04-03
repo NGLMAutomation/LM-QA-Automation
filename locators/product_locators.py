@@ -8,4 +8,5 @@ class ProductLocators:
     PRODUCT__CANT_BUY_WARNING = 'ru.leroymerlin.mobile:id/ll_warning'
     PRODUCT_ADD_TO_WISH_LIST_BUTTON = 'ru.leroymerlin.mobile:id/tv_shopping_list_product_small'
     PRODUCT_ADDED_IN_WISH_LIST_BUTTON = '//android.widget.TextView[@text="В списке"]'
+    PRODUCT_SHARING_BUTTON = 'ru.leroymerlin.mobile:id/action_share'
 
