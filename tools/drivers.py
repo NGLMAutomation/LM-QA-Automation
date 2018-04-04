@@ -11,10 +11,11 @@ class Drivers:
             'appActivity': 'ru.leroymerlin.mobile.presentation.MainActivity',
             'platformName': 'Android',
             'platformVersion': '6.0.1',
-            'deviceName': '69ab9a73', # Xiomi Redmi note 3 pro (My)
+            #'deviceName': '69ab9a73', # Xiomi Redmi note 3 pro (My)
             # 'deviceName': 'ce051715c550d01d03', # Samsung S8
             # 'deviceName': 'emulator-5554',  # Emulator
-            'appPackage': 'ru.leroymerlin.mobile'
+            'appPackage': 'ru.leroymerlin.mobile',
+            'deviceName': 'UKRWGALZQCWO6TYL' # Xiomi Note 4
         }
         driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
@@ -30,10 +31,11 @@ class Drivers:
             'automationName': 'Appium',
             'appActivity': 'ru.leroymerlin.mobile.presentation.MainActivity',
             'platformName': 'Android',
-            'platformVersion': '6.0.1',
-            'deviceName': '69ab9a73',  # Xiomi Redmi note 3 pro (My)
+            'platformVersion': '6.0',
+            #'deviceName': '69ab9a73',  # Xiomi Redmi note 3 pro (My)
             # 'deviceName': 'ce051715c550d01d03', # Samsung S8
             # 'deviceName': 'emulator-5554',  # Emulator
+            'deviceName': 'UKRWGALZQCWO6TYL', #Xiomi Note 4
             'appPackage': 'ru.leroymerlin.mobile',
             'noReset': 'true'
         }

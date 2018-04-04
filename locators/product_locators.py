@@ -6,3 +6,6 @@ class ProductLocators:
     PRODUCT_ADD_TO_CART = '//android.widget.TextView[@text="В корзину"]'
     PRODUCT_NAME = 'ru.leroymerlin.mobile:id/tv_name'
     PRODUCT__CANT_BUY_WARNING = 'ru.leroymerlin.mobile:id/ll_warning'
+    PRODUCT_FEEDBACK_BUTTON = '//android.widget.TextView[@text="Отзывы"]'
+    PRODUCT_LEFT_FEEDBACK_BUTTON = 'ru.leroymerlin.mobile:id/btn_add_review'
+    PRODUCT_QUESTION_BUTTON = 'ru.leroymerlin.mobile:id/btn_create_question'
