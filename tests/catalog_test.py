@@ -1,5 +1,6 @@
 import os, time
-from pages.All_functions import AllFunc
+# from pages.All_functions import AllFunc
+from pages.functions import *
 from tools.drivers import Drivers
 from locators.Catalog_Locators import CatalogLocators
 from locators.main_locators import MainLocators
@@ -9,24 +10,24 @@ PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
-class TestCatalogclass(AllFunc):
+class TestCatalogclass(Click, GetText, Swipe, IsObjPresent):
     driver = Drivers.xiaomi_driver
     c_driver = Drivers.xiaomi_c_driver
 
     def test_catalog_add_wish_list(self, c_driver):
-        AllFunc.clickOnPageElementByID(self, c_driver, MainLocators.CATALOG_BUTTON)
+        Click.byID(self, c_driver, MainLocators.CATALOG_BUTTON)
         time.sleep(2)
-        assert AllFunc.getTextFromPageElemenByXPATH(self, c_driver, CatalogLocators.CATALOG_TITLE) ==\
+        assert GetText.byXPATH(self, c_driver, CatalogLocators.CATALOG_TITLE) ==\
                'Каталог товаров'
 
 
-        AllFunc.clickOnPageElementByXPATH(self, c_driver, CatalogLocators.CATALOG_1lvl_1_CATEGORY)
+        Click.byXPATH(self, c_driver, CatalogLocators.CATALOG_1lvl_1_CATEGORY)
         time.sleep(2)
-        assert AllFunc.getTextFromPageElemenByXPATH(self, c_driver, CatalogLocators.CATALOG_TITLE_2LVL) == \
+        assert GetText.ByXPATH(self, c_driver, CatalogLocators.CATALOG_TITLE_2LVL) == \
                 'Стройматериалы'
 
 
-        AllFunc.clickOnPageElementByXPATH(self, c_driver, CatalogLocators.CATALOG_2LVL_1_CATEGORY)
+        Click.byXPATH(self, c_driver, CatalogLocators.CATALOG_2LVL_1_CATEGORY)
         time.sleep(2)
         assert AllFunc.getTextFromPageElemenByXPATH(self, c_driver, CatalogLocators.CATALOG_3LVL_1_CATEGORY) == \
                'Штукатурки'
