@@ -18,6 +18,7 @@ class TestWebViewAndroid(Click, GetText, Swipe, IsObjPresent):
 
     def test_best_price_page_opened(self, c_driver):
         Swipe.toTop(self, c_driver) # Свайпить снизу вверх
+        Swipe.toTop(self, c_driver) # Свайпить снизу вверх
         Click.byXPATH(self, c_driver, MainLocators.BP_LOOK_ALL_BUTTON) # Нажать на кнопку MainLocators.BP_LOOK_ALL_BUTTON
         assert GetText.byXPATH(self, c_driver, BPLocators.BP_PAGE_TITLE) == 'Лучшая цена'  # Проверить равен ли текст в BPLocators.BP_PAGE_TITLE заданному
         Click.byXPATH(self, c_driver, BPLocators.BP_BACK_BUTTON) # Нажать на кнопку BPLocators.BP_BACK_BUTTON
