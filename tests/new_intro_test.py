@@ -7,6 +7,6 @@ PATH = lambda p: os.path.abspath(
 )
 
 
-class TestWebViewAndroid(IntroPage, MainPage, Drivers):
+class TestWebViewAndroid(Drivers):
     driver = Drivers.driver
     c_driver = Drivers.c_driver
