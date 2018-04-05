@@ -17,3 +17,5 @@ class MainLocators:
     SHOPPING_LIST_BUTTON = 'ru.leroymerlin.mobile:id/tab_shopping_list'
     PROFILE_BUTTON = '//android.widget.TextView[@text="Профиль"]'
     MY_REGION = 'ru.leroymerlin.mobile:id/tv_region'
+    CATALOG_BUTTON = 'ru.leroymerlin.mobile:id/tab_catalog'
+

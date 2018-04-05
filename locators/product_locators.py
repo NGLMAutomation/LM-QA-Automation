@@ -9,3 +9,6 @@ class ProductLocators:
     PRODUCT_FEEDBACK_BUTTON = '//android.widget.TextView[@text="Отзывы"]'
     PRODUCT_LEFT_FEEDBACK_BUTTON = 'ru.leroymerlin.mobile:id/btn_add_review'
     PRODUCT_QUESTION_BUTTON = 'ru.leroymerlin.mobile:id/btn_create_question'
+    PRODUCT_ADD_TO_WISH_LIST_BUTTON = 'ru.leroymerlin.mobile:id/tv_shopping_list_product_small'
+    PRODUCT_ADDED_IN_WISH_LIST_BUTTON = '//android.widget.TextView[@text="В списке"]'
+    PRODUCT_SHARING_BUTTON = 'ru.leroymerlin.mobile:id/action_share'
