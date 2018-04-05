@@ -2,11 +2,7 @@ import os, time
 
 from tools.drivers import Drivers
 from pages.functions import Click, GetText, Swipe, IsObjPresent, InputText
-# from pages.All_functions import Click, GetText, Swipe, IsObjPresent
 from locators.main_locators import MainLocators
-from locators.product_locators import ProductLocators
-from locators.shoppingList_locators import ShopListLocators
-from locators.cart_locators import CartLocators
 from locators.profile_locators import ProfileLocators
 
 
