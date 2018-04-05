@@ -37,7 +37,7 @@ class Swipe(Drivers):
     # Функции для свайпа
     def toTop(self, driver):
         time.sleep(3)
-        driver.swipe(500, 1800, 500, 200, 1200)
+        driver.swipe(500, 1100, 500, 200, 1200)
 
     def toTop2(self, driver):
         time.sleep(3)
